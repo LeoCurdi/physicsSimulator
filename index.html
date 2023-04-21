@@ -50,10 +50,10 @@
                 stiffness: 0.05
               });
 
-              let stack = Matter.Composites.stack(880,-900,4,28,15,5, function(x,y){
+              let stack = Matter.Composites.stack(880,-900,4,8,15,5, function(x,y){
                 //return Matter.Bodies.rectangle(x,y,80,80);
                 //let sides = Math.round(Matter.Common.random(2,8));
-                return Matter.Bodies.polygon(x,y,8,20/*sides, Matter.Common.random(20,50) */);
+                return Matter.Bodies.polygon(x,y,4,20/*sides, Matter.Common.random(20,50) */);
               });
 
               let firing = false;
